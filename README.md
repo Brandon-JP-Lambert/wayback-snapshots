@@ -11,7 +11,7 @@ This Python script retrieves snapshots of specified websites from the Wayback Ma
 ## Usage
 
 1. Clone or download the repository.
-2. Install the required packages using `pip install -r requirements.txt`.
+2. Install the required packages.
 3. Open the script in your favorite code editor.
 4. Modify the `websites` list to include the websites you want to retrieve snapshots for.
 5. Set the `start_year`, `start_month`, `end_year`, and `end_month` variables to the desired date range.
