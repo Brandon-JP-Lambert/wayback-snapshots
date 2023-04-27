@@ -18,9 +18,9 @@ This Python script retrieves snapshots of specified websites from the Wayback Ma
 6. Update the `filename` variable with the path to the desired location for the output CSV file.
 7. Run the script using `python wayback_snapshot_downloader.py` (or the name you saved the script as).
 
-## Example
+## Output
 
-Here's an example of the script's output when retrieving snapshots for popular online learning platforms:
+Here's an example of the script's Python output when retrieving snapshots for popular online learning platforms:
 
 ```
 Retrieving snapshots for website: https://www.khanacademy.org/
@@ -28,8 +28,6 @@ Found snapshot for https://www.khanacademy.org/ in 2021-01
 No snapshots found for https://www.khanacademy.org/ in 2021-02
 ...
 ```
-
-## Output
 
 The script generates a CSV file containing the following columns:
 
@@ -45,3 +43,6 @@ The script generates a CSV file containing the following columns:
 ## Limitations
 
 The script uses the Wayback Machine API, which may have limitations in terms of rate limits or availability. In some cases, there might be no snapshots available for a specific website and month.
+
+## Reference:
+The Wayback Machine's API documentation can be found at: https://archive.org/help/wayback_api.php
