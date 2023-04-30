@@ -18,28 +18,25 @@ This Python script retrieves snapshots of specified websites from the Wayback Ma
 6. Update the `filename` variable with the path to the desired location for the output CSV file.
 7. Run the script using `python wayback_snapshot_downloader.py` (or the name you saved the script as).
 
-## Wayback API
+## Sample Input
+```
+# Set up list of websites to retrieve snapshots for
+websites = [
+    'https://www.example-website-1.com/',
+    'https://www.example-website-2.com/'
+]
 
-The Wayback API allows users to programmatically access the Wayback Machine, a digital archive of the World Wide Web. The API provides a variety of endpoints for retrieving historical versions of webpages, known as snapshots, as well as metadata about the snapshots.
+# Set up date range for snapshots
+start_year = 2021
+start_month = 1
+end_year = time.localtime().tm_year
+end_month = time.localtime().tm_mon
 
-### Features
+# Open CSV file for writing
+filename = os.path.join('YOUR DIRECTORY')
+```
 
-- Retrieve snapshots of webpages from the Wayback Machine
-- Access metadata about snapshots, including timestamps and URLs
-- Specify a date range or specific timestamp for retrieving snapshots
-
-### Usage
-
-To use the Wayback API, users can send HTTP requests to the API endpoints with the desired parameters. The API returns responses in JSON format, which can be parsed to extract the relevant information.
-
-### Limitations
-
-The Wayback API is subject to rate limits to prevent abuse. Users should be aware of these limits and avoid sending excessive requests in a short period of time. Additionally, the availability of snapshots may vary depending on the URL and date range specified.
-
-### Reference
-
-For more information about the Wayback API and its endpoints, users can refer to the official API documentation: https://archive.org/help/wayback_api.php
-## Output
+## Sample Output
 
 Here's an example of the script's Python output when retrieving snapshots for popular online learning platforms:
 
@@ -60,6 +57,20 @@ The script generates a CSV file containing the following columns:
 | https://www.udacity.com/     | 2021 | 1     | http://web.archive.org/web/20210110020409/...    |
 | https://www.udacity.com/     | 2021 | 2     | http://web.archive.org/web/20210209044423/...    |
 | ...                          | ...  | ...   | ...                                              |
+
+## Wayback API
+
+The Wayback API allows users to programmatically access the Wayback Machine, a digital archive of the World Wide Web. The API provides a variety of endpoints for retrieving historical versions of webpages, known as snapshots, as well as metadata about the snapshots.
+
+### Features
+
+- Retrieve snapshots of webpages from the Wayback Machine
+- Access metadata about snapshots, including timestamps and URLs
+- Specify a date range or specific timestamp for retrieving snapshots
+
+### Usage
+
+To use the Wayback API, users can send HTTP requests to the API endpoints with the desired parameters. The API returns responses in JSON format, which can be parsed to extract the relevant information.
 
 ## Limitations
 
